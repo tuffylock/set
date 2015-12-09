@@ -1,11 +1,11 @@
 require 'card'
 
 describe Card do
-  let(:card) {Card.new("✭", 1, :red, :blue)}
+  subject(:card) { Card.new("✭", 1, :red, :blue) }
 
   describe "#initialize" do
     it "takes four arguments and returns a Card object" do
-      expect(card).to be_an_instance_of(Card)
+      expect(card).to be_a(Card)
     end
   end
 
